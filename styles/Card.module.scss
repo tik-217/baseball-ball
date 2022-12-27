@@ -1,0 +1,156 @@
+.card {
+  margin: 0 30px 20px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_mainImage {
+  position: relative;
+}
+
+.card_mainImage_after::after {
+  content: "";
+  height: 28px;
+  width: 48px;
+  position: absolute;
+
+  top: 0px;
+  right: 5px;
+  background: #eb1405;
+
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  transform: skew(-30deg);
+}
+
+.card_mainImage_before::before {
+  content: "Хит";
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  z-index: 1;
+  color: white;
+  font-size: 12px;
+  margin: 5px 10px;
+  font-weight: 400;
+}
+
+.card_mainImage img {
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.card_meta_reviewsWrap {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 6px;
+  font-style: normal;
+}
+
+.card_meta_reviews {
+  flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+}
+
+.card_meta_reviews_stars img {
+  margin-right: 4px;
+}
+
+.card_meta_desc {
+  max-width: 275px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 7px;
+}
+
+.card_meta_cost {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+  margin-bottom: 13px;
+}
+
+.card_meta_cost_pieces {
+  font-size: 11px;
+  color: #999999;
+}
+
+.card_meta_action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_meta_action button,
+.card_meta_action img {
+  cursor: pointer;
+}
+
+.card_meta_action div:first-child {
+  display: flex;
+  align-items: center;
+  background: #f5f5f7;
+  width: fit-content;
+  border-radius: 90px;
+  position: relative;
+  width: 185px;
+}
+
+.card_meta_action_button_add {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: #4056a1;
+  color: white;
+  border-radius: 90px;
+  margin-right: 10px;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.card_meta_action_button_added {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background: #00b177;
+}
+
+.card_meta_action_button_quantity {
+  // display: flex;
+  margin-right: 20px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+.card_meta_action_button_quantity button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  color: #2e2e33;
+  opacity: 0.3;
+}
+
+.card_meta_action_button_quantity span {
+  font-size: 12px;
+  margin: 0 10px;
+  color: #2e2e33;
+  opacity: 0.8;
+}
+
+.card_meta_action_favourites {
+  filter: invert(23%) sepia(95%) saturate(4736%) hue-rotate(353deg)
+    brightness(97%) contrast(129%);
+}
