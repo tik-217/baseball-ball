@@ -56,7 +56,7 @@ export default function Card({
     const starsQuantity = Math.round(el.rating.rate);
     const stars = [];
 
-    for (let i = 0; i <= 5; i++) {
+    for (let i = 0; i < 5; i++) {
       if (i <= starsQuantity) {
         stars.push(
           <Image height={14} width={14} src="/images/star.svg" alt="" key={i} />
