@@ -57,7 +57,7 @@ export default function Card({
     const stars = [];
 
     for (let i = 0; i < 5; i++) {
-      if (i <= starsQuantity) {
+      if (i < starsQuantity) {
         stars.push(
           <Image height={14} width={14} src="/images/star.svg" alt="" key={i} />
         );
