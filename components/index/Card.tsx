@@ -52,7 +52,7 @@ export default function Card({
 
   function getStars() {
     const starsQuantity = Math.round(el.rating.rate);
-    const stars: any = [];
+    const stars = [];
 
     for (let i = 0; i <= 5; i++) {
       if (i <= starsQuantity) {
