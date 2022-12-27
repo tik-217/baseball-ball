@@ -35,6 +35,7 @@ export default function Card({
     if (!activationFavourites) return;
 
     setFavourites(el.id, isFavourites);
+    // eslint-disable-next-line
   }, [activationFavourites]);
 
   useEffect(() => {
@@ -48,6 +49,7 @@ export default function Card({
     };
 
     updateCart([...cart, addedProduct]);
+    // eslint-disable-next-line
   }, [activationCard]);
 
   function getStars() {
