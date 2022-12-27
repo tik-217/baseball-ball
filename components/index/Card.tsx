@@ -102,7 +102,7 @@ export default function Card({
             : `${el.description.substring(0, 200)} ...`}
         </p>
         <div className={style.card_meta_cost}>
-          {(el.price * 70).toLocaleString().replace(",", ".")}
+          {Math.round(el.price * 70).toLocaleString()}
           <span className={style.card_meta_cost_pieces}> /шт.</span>
         </div>
         <div className={style.card_meta_action}>
